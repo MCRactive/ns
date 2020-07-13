@@ -1,0 +1,25 @@
+{
+  "name": "ns",
+  "version": "1.0.0",
+  "description": "MCRactive Extension Namespace Vocabulary Terms",
+  "scripts": {
+    "start": "./deploy.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcractive/ns.git"
+  },
+  "keywords": [
+    "OpenActive"
+  ],
+  "author": "MCRactive",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcractive/ns/issues"
+  },
+  "homepage": "https://github.com/mcractive/ns#readme",
+  "dependencies": {
+    "extension-documentation-generator": "git+https://github.com/openactive/extension-documentation-generator.git"
+  }
+}
