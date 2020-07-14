@@ -9,4 +9,4 @@ Please create a pull request amending the file `mcr.jsonld` with the relevant te
 
 ## Tooling dependencies
 
-The OpenActive validator (https://validator.openactive.io) will pick up changes to the namespace immediately.
+The OpenActive validator (https://validator.openactive.io) will pick up changes to the namespace immediately when it is referenced via `@context`.
