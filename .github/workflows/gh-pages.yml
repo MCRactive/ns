@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Render Documentation
-        uses: openactive/extension-documentation-generator@latest
+        uses: openactive/extension-documentation-generator@master
         with:
           header: header.md
           context: mcr.jsonld
