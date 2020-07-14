@@ -20,7 +20,7 @@ Please raise requests for content or issues related to the namespace via [GitHub
     "https://data.mcractive.com/ns/mcr.jsonld"
   ],
   "@type": "Place",
-    "name": "ExampleCo Gym Kingswood",
+  "name": "ExampleCo Gym Kingswood",
   "mcr:placeClassification": [
     "https://data.mcractive.com/ns#LeisureCentre"
   ],
