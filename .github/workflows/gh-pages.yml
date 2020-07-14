@@ -10,12 +10,14 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 10.x
-        uses: actions/setup-node@v1
+      - name: Render Documentation
+        uses: openactive/extension-documentation-generator
         with:
-          node-version: 10.x
-      - name: Build
-        run: ./deploy.sh
+          header: header.md
+          context: mcr.jsonld
+          with_issues: false
+      - name: Copy JSON-LD
+        run: cp mcr.jsonld ./out/
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
