@@ -31,7 +31,22 @@ Please raise requests for content or issues related to the namespace via [GitHub
     "addressRegion": "South Gloucestershire",
     "postalCode": "BS1 4SD",
     "addressCountry": "GB"
-  }
+  },
+  "mcr:frequentlyAskedQuestion": [
+    {
+      "@type": "Question",
+      "name": "Are there public toilets in the centre?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes there are toilets near the entrance",
+        "dateCreated": "2010-12-01T22:01Z",
+        "author": {
+          "@type": "Person",
+          "name": "someuser"
+        }
+      }
+    }
+  ]
 }
 ```
 
