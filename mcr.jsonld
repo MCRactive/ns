@@ -7,6 +7,19 @@
   ],
   "@graph": [
     {
+      "@id": "mcr:frequentlyAskedQuestion",
+      "@type": "Property",
+      "label": "frequentlyAskedQuestion",
+      "comment": "FAQ associated with the Place",
+      "domainIncludes": [
+        "schema:Place"
+      ],
+      "rangeIncludes": [
+        "schema:Question"
+      ],
+      "@container": "@list"
+    }, 
+    {
       "@id": "mcr:placeClassification",
       "@type": "Property",
       "label": "placeClassification",
@@ -16,7 +29,8 @@
       ],
       "rangeIncludes": [
         "mcr:PlaceClassification"
-      ]
+      ],
+      "@container": "@list"
     },
     {
       "@id": "mcr:PlaceClassification",
