@@ -16,11 +16,10 @@ jobs:
           header: header.md
           context: mcr.jsonld
           with_issues: false
-      - name: Copy JSON-LD
-        run: cp mcr.jsonld ./out/
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           force_orphan: true
+          enable_jekyll: true
