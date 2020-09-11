@@ -52,6 +52,18 @@
       "@type": "mcr:PlaceClassification",
       "label": "Park",
       "comment": "Place is a park"
+    },
+    {
+      "@id": "https://data.mcractive.com/ns#OpenSpace",
+      "@type": "mcr:PlaceClassification",
+      "label": "OpenSpace",
+      "comment": "Place is an open space"
+    },
+    {
+      "@id": "https://data.mcractive.com/ns#EducationCampus",
+      "@type": "mcr:PlaceClassification",
+      "label": "EducationCampus",
+      "comment": "Place is the campus of an educational institution"
     }
   ]
 }
