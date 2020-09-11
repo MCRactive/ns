@@ -1,0 +1,69 @@
+{
+  "@context": [
+    "https://openactive.io/ns-extension",
+    {
+      "mcr": "https://data.mcractive.com/ns#"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "mcr:frequentlyAskedQuestion",
+      "@type": "Property",
+      "label": "frequentlyAskedQuestion",
+      "comment": "FAQ associated with the Place",
+      "domainIncludes": [
+        "schema:Place"
+      ],
+      "rangeIncludes": [
+        "schema:Question"
+      ],
+      "@container": "@list"
+    }, 
+    {
+      "@id": "mcr:placeClassification",
+      "@type": "Property",
+      "label": "placeClassification",
+      "comment": "The type of place.",
+      "domainIncludes": [
+        "schema:Place"
+      ],
+      "rangeIncludes": [
+        "mcr:PlaceClassification"
+      ],
+      "@container": "@list"
+    },
+    {
+      "@id": "mcr:PlaceClassification",
+      "@type": "Class",
+      "label": "PlaceClassification",
+      "comment": "An enumeration of types of a place.",
+      "subClassOf": [
+        "schema:Enumeration"
+      ]
+    },
+    {
+      "@id": "https://data.mcractive.com/ns#LeisureCentre",
+      "@type": "mcr:PlaceClassification",
+      "label": "LeisureCentre",
+      "comment": "Place is a leisure centre"
+    },
+    {
+      "@id": "https://data.mcractive.com/ns#Park",
+      "@type": "mcr:PlaceClassification",
+      "label": "Park",
+      "comment": "Place is a park"
+    },
+    {
+      "@id": "https://data.mcractive.com/ns#OpenSpace",
+      "@type": "mcr:PlaceClassification",
+      "label": "OpenSpace",
+      "comment": "Place is an open space"
+    },
+    {
+      "@id": "https://data.mcractive.com/ns#EducationCampus",
+      "@type": "mcr:PlaceClassification",
+      "label": "EducationCampus",
+      "comment": "Place is the campus of an educational institution"
+    }
+  ]
+}
